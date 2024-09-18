@@ -1,0 +1,247 @@
+body{
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    overflow: hidden;
+    background-color: black;
+    padding: 0;
+    width: 100%;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    position: sticky;
+}
+
+.navbar .nav-header{
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    font-size: 38px;
+    height: fit-content; 
+}
+
+.identitas{
+    padding-top: 150px;
+    padding-left: -400px;
+    margin: 10px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+ .identitas .identitas-box{
+    width: 1200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+} 
+.identitas .pelayan{
+    width: 350px;
+    height: 350px;
+    border-radius: 100px;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.identitas .pelayan .gambar{
+    width: 170px;
+    height: 170px;
+    border-radius: 75%;
+    margin-bottom: 40px;
+}
+.identitas .pelayan .pelayan-nama{
+    color: white;
+    width: 110px;
+    height: 30px;
+    font-weight: 400;
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.identitas .pelayan .pelayan-head {
+    color: white;
+    width: 150px;
+    height: 60px;
+    font-weight: 400;
+    font-size: 45px;
+
+}
+.identitas .pemesan div{
+    width: 600px;
+    height: 70px;
+    margin-left: 30px;
+    border-radius: 40px;
+    background-color: rgb(199, 203, 199,0.7);
+    box-sizing: border-box;
+    font-weight: 400;
+    font-size: 29px;
+    padding: 20px 50px;
+    border:3px solid black;
+}
+.identitas .pemesan .alamat{
+    margin-top: 26px;
+    margin-bottom: 26px;
+}
+.identitas .pemesan .nama {
+    margin-top: 26px;
+}
+.pesanan{
+    margin: 150px;
+    display: flex;
+    align-items: center;
+    flex-direction: space-between;
+}
+.pesanan .pesanan-box{
+    background-color: rgba(58, 1, 1, 0.7);
+    width: 1240px;
+    height: 500px;
+    box-sizing: border-box;
+    padding: 20px 10px;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:-150px auto;
+}
+.pesanan .pesanan-box:has(.nasi-goreng){
+    margin-bottom: 45px;
+}
+.pesanan .pesanan-box ul{
+    padding: 100;
+    margin: 10;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.pesanan .pesanan-box ul .gambar img{
+    width: 200px;
+    height: 200px;
+    margin-right: 100px;
+}
+.pesanan .pesanan-box ul .nama{
+    font-weight: 500;
+    font-size: 38px;
+    color: white;
+    margin-right: 100px;
+}
+.pesanan .pesanan-box ul .harga{
+    font-weight: 500;
+    font-size: 38px;
+    color: white;
+    margin-right: 100px;
+}
+.judul-pesanan .pesanan-head{
+    background-color: rgb(58, 1, 1,0.7);
+    width: 1240px;
+    height: 100px;
+    box-sizing: border-box;
+    padding: 10px 10px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin:180px auto;
+}
+.pesanan-head{
+    font-weight: 700;
+    font-size: 38px;
+    color: white;
+    margin-left: -200px;
+    font-style: normal ;
+}
+.bayar{
+    width: 100%;
+    margin: 100px auto;
+
+}
+.bayar .bayar-box{
+    width: 1240px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px auto;
+}
+.bayar .bayar-box .bayar{
+    width: 100px;
+    height: fit-content;
+}
+.bayar .bayar-box .bayar div{
+    width: 1240px;
+    height: 103px;
+    box-sizing: border-box;
+    padding: 32px 25px;
+    background-color: rgb(199, 203, 199,0.7);
+    border-radius: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border:3px solid black;
+    margin: 0 auto;
+}
+.bayar  .bayar-box .bayar .tengah{
+    margin:10px 0;
+}
+.bayar .bayar-box .bayar div .bayar-judul{
+    font-size: 32px;
+    font-weight: 700;
+}
+.bayar .bayar-box .bayar div .bayar-harga{
+    font-size: 32px;
+    font-weight: 600;
+}
+.bayar .bayar-box .metode{
+    width: 1240px;
+    height: 150px;
+    box-sizing: border-box;
+    padding: 32px 25px;
+    background-color: rgb(199, 203, 199,0.7);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    border:3px solid black;
+    margin:-90px auto;
+}
+.bayar .bayar-box .metode .metode-judul{
+    font-size: 30px;
+    font-weight: 600;
+}
+.bayar .bayar-box .metode .metode-cara{
+    font-size: 30px;
+    font-weight: 600;
+}
+.bayar .bayar-box .metode .metode-form{
+    width:300px;
+    display: flex;
+    flex-direction:column;
+
+}
+.metode .metode-form label{
+    font-size: 50px;
+    font-weight: 500px;
+    margin-top: 37px;
+}
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(1, 0, 0);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border:3px solid black;
+}
+.footer .nama{
+    color: aquamarine;
+    font-size: 20px;
+    font-weight: 200;
+    font-style: italic;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bukti Pemesanan</title>
+    <link rel="stylesheet" href="Styles/style.css">
+    <style>
+        body{
+            background-image: url(Assets/logo-resto.jpeg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100%;
+        }
+        .title{
+            text-align: center;
+            font-size: 2.5em;
+            color: #000;
+        }
+
+        
+    </style>
+ </head>
+<body>
+    <nav class="navbar">
+        <div class="nav-header">BUKTI TRANSAKSI</div>
+    </nav>
+    <form action="">
+        <section class="identitas">
+            <div class="identitas-box">
+                <div class="pelayan">
+                    <div class="pelayan-head">Pelayan</div>
+                    <img src="Assets/a.jpg" alt="Gambar lah pokoknya" class="gambar">
+                    <div class="pelayan-nama">Asudin</div>
+                </div>
+                <div class="pemesan">
+                    <div class="head">PEMESAN :</div>
+                    <div class="nama"> Abdullah Azam</div>
+                    <div class="alamat"> Jl. Merdeka No 15, Kota Balikpapan</div>
+                    <div class="tanggal"><label for="tanggal">Tanggal </label><input type="date" name="tanggal"></div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="judul-pesanan">
+            <div class="pesanan-head">Pesanan</div>
+        </section>
+    
+        <section class="pesanan">
+            <div class="pesanan-box">
+                    <ul>
+                        <li class="gambar"><img src="Assets/nasi-goreng.jpeg" alt="Nasi Goreng" class="nasi-goreng"></li>
+                        <li class="nama">Nasi Goreng Babi</li>
+                        <li class="harga">Rp. 270.000</li>
+                    </ul>
+                    <ul>
+                        <li class="gambar"><img src="Assets/es-teh-manis.jpeg" alt="Es Teh Manis"></li>
+                        <li class="nama">Es Teh Manis</li>
+                        <li class="harga">Rp. 35.000</li>
+                    </ul>
+            </div>
+        </section>
+        <section class="bayar">
+            <div class="bayar-box">
+                <div class="bayar">
+                    <div>
+                        <h2 class="bayar-judul">Total Pesanan</h2>
+                        <h2 class="bayar-harga">Rp. 305.000</h2>
+                    </div>
+                    <div class="tengah">
+                        <h2 class="bayar-judul">Pajak</h2>
+                        <h2 class="bayar-harga">Rp. 21.739</h2>
+                    </div>
+                    <div>
+                        <h2 class="bayar-judul">Total Tagihan</h2>
+                        <h2 class="bayar-harga">Rp. 326.739</h2>
+                    </div>
+                </div>
+                <div class="metode">
+                    <div class="metode-judul">Metode Pembayaran</div>
+                    <div class="metode-cara">
+                            <label for="metode-radio"><input type="radio" name="metode-radio"> Bank BCA</label>
+                            <label for="metode-radio"><input type="radio" name="metode-radio"> Bank Mandiri</label>
+                            <label for="metode-radio"><input type="radio" name="metode-radio"> OVO</label>
+                            <label for="metode-radio"><input type="radio" name="metode-radio"> GoPay</label>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </form>
+    <footer class="footer">
+        <div class="footer-desc">
+            <h3 class="nama">Christian Mahatma Bima Alpindo</h3>
+        </div>
+    </footer>
+
+</body>
+</html>
