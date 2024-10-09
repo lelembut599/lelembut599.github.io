@@ -1,0 +1,77 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 20px;
+}
+
+#tambah-data {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    padding: 40px; /* Tambahkan padding yang lebih besar */
+    max-width: 800px; /* Maksimum lebar yang lebih besar untuk form */
+    margin: 0 auto; /* Rata tengah */
+}
+
+.judul {
+    text-align: center; /* Rata tengah */
+    margin-bottom: 30px; /* Tambahkan margin lebih besar di bawah judul */
+}
+
+.judul p {
+    font-size: 32px; /* Ukuran font untuk judul yang lebih besar */
+    font-weight: bold;
+    color: #333;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form input[type="text"],
+.form input[type="date"],
+.form input[type="file"] {
+    width: 100%;
+    padding: 15px; /* Tambahkan padding yang lebih besar */
+    margin: 15px 0; /* Tambahkan margin yang lebih besar */
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    font-size: 18px; /* Ukuran font yang lebih besar */
+}
+
+.comment-input {
+    width: 100%;           
+    height: 150px;        
+    padding: 10px;        
+    font-size: 20px;  
+    background-color: rgb(255, 255, 255);   
+    border: 1px solid #ddd; 
+    border-radius: 30px;  
+    resize: vertical;
+}
+
+.form label {
+    font-size: 18px; /* Ukuran font label yang lebih besar */
+    color: #555;
+    margin-bottom: 10px; /* Tambahkan margin di bawah label */
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #fb2626;
+    color: white;
+    border: none;
+    padding: 15px 20px; /* Tambahkan padding yang lebih besar */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 21px;
+    font-weight: 300;/* Ukuran font yang lebih besar untuk tombol */
+    transition: background-color 0.3s;
+    margin-top: 20px; /* Tambahkan margin di atas tombol */
+}
+
+input[type="submit"]:hover {
+    background-color: #f80000;
+}
