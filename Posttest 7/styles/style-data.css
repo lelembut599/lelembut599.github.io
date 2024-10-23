@@ -1,0 +1,143 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 0;
+    padding: 30px;
+}
+
+#data-anjing {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.data-judul {
+    margin-bottom: 20px;
+}
+
+.data-judul p {
+    font-size: 45px; 
+    font-weight: bold;
+    color: #333;
+    text-align: center; 
+}
+
+.tambah-anjing {
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+    text-align: right; 
+}
+
+.tambah-anjing button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 26px;
+    font-weight: 300;
+    transition: background-color 0.3s;
+}
+
+.tambah-anjing button:hover {
+    background-color: #45a049;
+}
+
+.back {
+    width: 100%;
+    height: 10px;
+    margin: 10px 0;
+    text-align: left;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+
+}
+
+.back {
+    margin: auto;
+    color: #0f0f0f;
+    font-size: 20px;
+    font-weight: 100;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.1s ease;
+}
+
+.back:hover {
+    color: #080808;
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: bold;
+    cursor: pointer;
+    transform: scale(1.);
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8),
+                 0px 0px 20px rgb(255, 0, 0);
+}
+
+.tabel-anjing {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabel-header {
+    background-color: #e04e18;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 20px;
+}
+
+.tabel-header th, .tabel-desc td {
+    padding: 19px; 
+    border-bottom: 1px solid #000000;
+}
+
+.tabel-desc {
+    width: 100%;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.tabel-desc:hover {
+    background-color: #999898;
+}
+
+.edit-data, .hapus-data {
+    text-align: center;
+    justify-content: center;
+}
+
+.hapus button{
+    background-color: #ff5500;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #000000; 
+    transition: color 0.3s; 
+
+}
+.edit button {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #000000; 
+    transition: color 0.3s; 
+}
+
+.edit button:hover {
+    color:rgb(2, 65, 2); 
+}
+.hapus button:hover{
+    color: rgb(2, 30, 64);
+}
+.edit, .hapus {
+    text-align: center;
+}

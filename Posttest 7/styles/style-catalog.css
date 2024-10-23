@@ -1,0 +1,185 @@
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+}
+
+#navbar {
+    background-color: #dc3a3a;
+    color: rgb(0, 0, 0);
+    padding: 10px 30px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-judul p {
+    font-size: 35px;
+    font-weight: 600;
+    margin: 0; 
+}
+
+.logo img {
+    vertical-align: middle;
+}
+
+.nav-back .back {
+    margin: 0;
+    color: #000000;
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back:hover {
+    color: #080808;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8),
+                 0px 0px 20px rgb(255, 255, 255);
+}
+
+
+#search-bar-container {
+    text-align: center;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.search-input {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid #e63946;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #d62828;
+}
+
+.search-button {
+    padding: 10px 15px;
+    background-color: #e63946;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #d62828;
+}
+
+
+#catalog {
+    width: 100%;
+    padding: 30px;
+    background-color: #f8f9fa; 
+}
+
+.catalog-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.catalog-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 180px; 
+    text-align: center;
+    padding: 20px; 
+    transition: background-color 0.3s ease, transform 0.5s ease;
+}
+
+.catalog-item:hover {
+    transform: scale(1.05);
+    box-shadow: 3.5px 3.5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.item-gambar {
+    width: auto;
+    height: 150px; 
+    border-radius: 10px;
+}
+
+.item-judul {
+    font-size: 1rem; 
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+}
+
+.catalog-item .ctn-learn-more {
+    background-color: #e63946;
+    color: #fff;
+    padding: 8px 12px; 
+    margin-top: 8px;
+    border-radius: 20px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.catalog-item .ctn-learn-more:hover {
+    background-color: #d62828;
+    box-shadow: 3.5px 3.5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+    .catalog-item {
+        width: calc(33% - 40px);
+    }
+}
+
+@media (max-width: 768px) {
+    .catalog-item {
+        width: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .catalog-item {
+        width: calc(100% - 40px);
+    }
+
+    /* Adjust search bar on small screens */
+    .search-bar-container {
+        flex-direction: column;
+    }
+
+    .search-form {
+        flex-direction: column;
+    }
+
+    .search-input, .search-button {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .search-input {
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+
+    .search-button {
+        border-radius: 5px;
+    }
+}
